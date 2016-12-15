@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="storeApp">
+<head>
+    <meta charset="utf-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Merchant</h1>
+        </div>
+        <div ng-include="'partials/nav.html'"></div>
+        <div ng-view></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="moment/moment.js"></script>
+    <script src="angular-moment/angular-moment.js"></script>
+    <script src="app.js"></script>
+    <script src="factories/customerF.js"></script>
+    <script src="factories/orderF.js"></script>
+    <script src="factories/productF.js"></script>
+    <script src="controllers/indexC.js"></script>
+    <script src="controllers/customerC.js"></script>
+    <script src="controllers/productC.js"></script>
+    <script src="controllers/orderC.js"></script>
+</body>
+</html>
