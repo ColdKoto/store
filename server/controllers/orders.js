@@ -52,7 +52,7 @@ class OrdersController{
         });
     }
     delete(req, res){
-        Order.remove({_id: req.params.id}, function(err){
+        order.remove({_id: req.params.id}, function(err){
             if(err){
                 res.json(err);
             }
